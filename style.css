@@ -1,0 +1,174 @@
+body {
+    background-color: #000; /* Black background color */
+    color: #fff; /* Light text color for content */
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Required for background video positioning */
+  }
+  
+  
+  #myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Cover the entire viewport height */
+    object-fit: cover; /* Stretch video to fill the container */
+    z-index: -1; /* Place video behind other content */
+  }
+  
+  .header {
+    display: flex;
+    align-items: center; /* Adjust header alignment if needed */
+    padding: 20px;
+    color: #fff; /* Light text color for header */
+  }
+  
+  /* Removed background-color from header section (not needed anymore) */
+  
+  .logo-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .company-name {
+    margin: 10px;
+  }
+  
+  .header a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .main {
+    padding: 4rem;
+    padding-left: 4rem;
+    display: flex; /* Main section as container for elements */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+  }
+  
+  .main-content {
+   padding: 4rem;
+   padding-left: 4rem;
+  }
+  
+  about-content .main {
+    padding: 2rem;
+    padding-left: 2rem;
+    display: flex; /* Main section as container for elements */
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  
+  h1, h2 {
+    margin-bottom: 10px;
+    color: #fff; /* Light text color */
+  }
+  
+  .nav {
+    display: flex; /* Navigation remains as flexbox */
+    list-style: none;
+    padding: 0;
+    margin: 20px auto; /* Adjust margin if needed */
+    justify-content: space-between; /* Distribute links horizontally (optional) */
+  }
+  
+  .nav-link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #ddd; /* Adjust link color for better contrast */
+    font-weight: bold;
+  }
+  
+  .nav-link.current {
+    border-bottom: 2px solid #18d26e; /* Adjust border color */
+  }
+  
+  .content {
+    padding: 20px;
+    color: #fff; /* Light text color for content */
+  }
+  
+  /* Responsive adjustments (optional) */
+  
+  @media (max-width: 768px) {
+    .main {
+      flex-direction: column; /* Maintain vertical stacking on mobile */
+    }
+  
+    .nav {
+      flex-direction: column; /* Switch navigation to vertical on mobile */
+      align-items: center; /* Center links vertically on mobile */
+      margin: 0 auto; /* Center navigation horizontally on mobile */
+    }
+  
+    .nav-link {
+      margin: 10px 0; /* Adjust margin between links on mobile */
+    }
+  }
+  
+  .social-links {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .social-links li {
+    display: inline-block; /* Display links inline side-by-side */
+    margin: 0 30px; /* Add spacing between links */
+  }
+  
+  .social-links a {
+    color: inherit; /* Inherit text color from parent */
+    text-decoration: none; /* Remove default underline */
+  }
+  
+  .social-links i {
+    font-size: 24px; /* Adjust icon size */
+  }
+  
+  .dark {  /* Styles for elements with class "dark" */
+    background-color: #000;  /* Dark background color */
+    color: #fff;            /* White text color */
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000; /* Darker footer background */
+    color: #ccc; /* Footer text color */
+  }
+  
+  .resume-container {
+    /* Add your desired styles here */
+    border: 1px solid #ddd; /* Example: Add a border */
+    background-color: #eee; /* Example: Add a background color */
+    padding: 10px; /* Example: Add padding */
+  }
+  
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Three columns */
+    grid-gap: 40px;  /* Gap between book items */
+  }
+  
+  .book-item {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .book-item img {
+    width: 100%;  /* Adjust image width as needed */
+  }
+  
+  
+  

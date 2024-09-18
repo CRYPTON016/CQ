@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Sequrity - Project 2</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <a href="index.html" class="logo-name">
+        <img src="media/logo.png" alt="Your Name Logo" class="logo">
+        <h3 class="company-name">Cloud Sequrity</h3>
+      </a>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="projects.html" class="nav-link current">Projects & Certs</a>
+      <a href="book.html" class="nav-link">Bookshelf</a>
+    </nav>
+  </header>
+  
+  <main class="main-content">
+
+    <section class="section">
+      <h2>Project 3</h2>
+
+        <h4>Preparation:</h4>
+        <ul>
+        <li>Initialize Google Cloud Shell: This provides a command-line environment within your GCP console.</li>
+        
+        <li>Enable Billing: Honeypot deployments on GCP will incur charges, so ensure billing is enabled for your project.</li>
+
+        <li>Enable Compute Engine API: The Compute Engine API allows you to create and manage virtual machines (VMs) needed for the honeypot.</li>
+        
+        <li>Select Region/Zone: Choose a region and zone where you want to deploy your honeypot VM. This affects latency and costs.</li>
+        </ul>
+
+        <h4>Deployment:</h4>
+        <ul>
+            <li>Configure Firewall: Since a honeypot acts as a decoy, you'll need to configure firewall rules to allow specific traffic to reach the honeypot VM while blocking everything else.</li>
+        
+            <li>Install MHN Admin: Many honeypot solutions use a central management tool called MHN Admin. You'll need to install it on a separate VM.</li>
+        
+            <li>Honeypot VM Setup: Create a VM instance for the honeypot itself. Choose an appropriate operating system based on the honeypot software you select.</li>
+        </ul>
+        
+        Additional Considerations:
+        Security: Carefully manage firewall rules to avoid exposing unintended services on your honeypot VM.
+        
+        Monitoring: Set up monitoring for your honeypot VM to track its health and potential attacks.
+        
+        Legality: Operating a honeypot might have legal implications depending on your location. Ensure you comply with relevant laws.
+        
+    </section>
+    
+      </main>
+    
+ <footer class="footer">
+  <div class="social-links">
+  <a href="https://www.linkedin.com/in/gokuls16/" target="_blank" class="social-link">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://www.cloudskillsboost.google/public_profiles/25d893ac-d37d-4dae-b44c-616e9fa49277" target="_blank" class="social-link">
+    <i class="fab fa-google"></i>  </a>
+  <a href="mailto:info@cloudsequrity.com" class="social-link">
+    <i class="fas fa-envelope"></i>  </a>
+  <a href="https://www.youtube.com/channel/UC2NsHKDermiECsvxuutTTAQ" target="_blank" class="social-link">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+  <p class="copyright">Copyright &copy; Gokul S 2024</p>
+</footer>
+
+</body>
+</html>
