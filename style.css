@@ -170,5 +170,46 @@ body {
     width: 100%;  /* Adjust image width as needed */
   }
   
+  /* ... (same CSS as before) */
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333399; /* A deep purple */
+  }
+  
+  .title {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .option-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .option-button.red {
+    background-color: #ff4d4d;
+  }
+  
+  .option-button.blue {
+    background-color: #007bff;
+  }
+  
+  .option-button:hover {
+    background-color: #0056b2; /* Darker blue on hover */
+  }
   
   
